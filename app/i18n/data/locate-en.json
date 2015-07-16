@@ -1,0 +1,12 @@
+{
+  "HEADLINE": "What an awesome module!",
+  "PARAGRAPH": "Srsly!",
+  "NAMESPACE": {
+    "PARAGRAPH": "And it comes with awesome features!"
+  },
+  "PASSED_AS_INTERPOLATION": "Beginners! I'm interpolated!",
+  "VARIABLE_REPLACEMENT": "Hi, {{name}}",
+  "BUTTON_LANG_CN": "\u4e2d\u6587",
+  "BUTTON_LANG_TW": "\u7e41\u4f53",
+  "BUTTON_LANG_EN": "english"
+}

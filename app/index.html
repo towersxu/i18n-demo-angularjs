@@ -1,0 +1,28 @@
+<!doctype html>
+<html ng-app="myApp">
+<head>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+    <script src="bower_components/angular-translate/angular-translate.js"></script>
+    <script src="bower_components/angular-translate-loader-url/angular-translate-loader-url.js"></script>
+    <script src="bower_components/angular-translate-loader-static-files/angular-translate-loader-static-files.js"></script>
+    <script src="app.js"></script>
+</head>
+<body>
+<div>
+    <div ng-controller="Ctrl">
+        <h2 id="{{headline}}">{{headline}}</h2>
+        <p>{{paragraph}}</p>
+        <p>{{namespaced_paragraph}}</p>
+        <h2>{{'HEADLINE' | translate}}</h2>
+        <p translate="{{ 'PASSED_AS_INTERPOLATION' }}"></p>
+        <p translate="VARIABLE_REPLACEMENT" translate-values="{ name: 'Towersxu'}"></p>
+        <p translate="VARIABLE_REPLACEMENT" translate-value-name="tao xu"></p>
+
+        <button ng-click="changeLanguage('zh_CN')" translate="BUTTON_LANG_CN"></button>
+        <button ng-click="changeLanguage('zh_TW')" translate="BUTTON_LANG_TW"></button>
+        <button ng-click="changeLanguage('en')" translate="BUTTON_LANG_EN"></button>
+    </div>
+</div>
+</body>
+</html>
